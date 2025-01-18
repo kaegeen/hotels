@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">HotelOnline</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:underline">Home</a></li>
+                <li><a href="#rooms" class="text-white hover:underline">Rooms</a></li>
+                <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-500 text-white text-center py-20">
+        <h2 class="text-4xl font-bold">Book Your Perfect Stay</h2>
+        <p class="mt-4 text-lg">Discover luxury and comfort at our premium hotel rooms.</p>
+        <button class="mt-6 px-6 py-3 bg-white text-blue-500 font-bold rounded-lg hover:bg-gray-100">Explore Now</button>
+    </header>
+
+    <!-- Room Listings -->
+    <section id="rooms" class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-8">Available Rooms</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Room 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-xl">Deluxe Room</h4>
+                        <p class="text-gray-600 mt-2">$150 per night</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">View Details</button>
+                    </div>
+                </div>
+                <!-- Room 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Room 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-xl">Suite Room</h4>
+                        <p class="text-gray-600 mt-2">$250 per night</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">View Details</button>
+                    </div>
+                </div>
+                <!-- Room 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Room 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-xl">Standard Room</h4>
+                        <p class="text-gray-600 mt-2">$100 per night</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold text-center mb-8">Contact Us</h3>
+            <form class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-8">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold">Name</label>
+                    <input type="text" id="name" class="w-full mt-2 p-3 border rounded-lg" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold">Email</label>
+                    <input type="email" id="email" class="w-full mt-2 p-3 border rounded-lg" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold">Message</label>
+                    <textarea id="message" rows="4" class="w-full mt-2 p-3 border rounded-lg" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2025 HotelOnline. All rights reserved.</p>
+    </footer>
+</body>
+</html>
